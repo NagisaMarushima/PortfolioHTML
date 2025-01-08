@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<main>
+  <hgroup>
+    <img class="top" src="img/IMG_0016.JPG">
+    <h1>Portfolio</h1>
+
+
+    <div class="s1">
+      <h2>作者の紹介</h2>
+
+      <div class="vert">
+        <div>
+          <ul>
+      <li><button id="who">丸島渚沙とは</button></li>
+      <li><button id="what">職歴</button></li>
+      <li><button id="have">資格・言語</button></li>
+         </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </hgroup>
+
+
+
+
+<div id="wrapper1">
+  <div id="inside1">
+         <div id="close1">x</div>
+      <div id="message1">
+        千葉県柏市出身、29歳。<br>
+        法政大学文学部心理学科中退。<br>
+        一児の母である。<br>
+        なお、法政大学は特待生として入学した。
+        
+        <div class="conte1">
+
+        </div>
+      
+      </div>
+  </div>
+</div>
+
+
+<div id="wrapper2">
+  <div id="inside2">
+         <div id="close2">x</div>
+      <div id="message2">
+        Amazon流山FC<br>
+        OutBound L1 <br>
+        出産のため満期契約終了<br>
+        (2022/10~2023/3)<br>
+        <br>
+        2024/09~<br>
+        職業訓練校にて<br>
+        HTML/JavaScript/PHPを<br>
+        学ぶ<br>
+      <div class="conte">
+
+     </div>
+      
+    </div>
+
+  </div>
+</div>
+
+
+
+  <div id="wrapper3">
+  <div id="inside3">
+         <div id="close3">x</div>
+      <div id="message3">
+        TOEIC XXX点(2024/12)<br>
+        基本情報処理技術者試験（勉強中）<br>
+        <br>
+        言語:HTML/css/JavaScript<br>
+            PHP/swift/Excel VBA
+      <div class="conte">
+
+     </div>
+      
+    </div>
+
+  </div>
+</div>
+
+
+<script>
+  'use strict'
+
+  const buttons = [
+  { id: 'who', Wrapper: 'wrapper1' ,inside:'inside1',close:'close1'},
+  { id: 'what', Wrapper: 'wrapper2' ,inside:'inside2',close:'close2'},
+  { id: 'have', Wrapper: 'wrapper3',inside:'inside3' ,close:'close3'},
+  // { id: 'HM',Wrapper:'wrapperHM',inside:'insideHM', close:'closeHM'},
+  // { id: 'TN',Wrapper:'wrapperTN',inside:'insideTN', close:'closeTN'}
+];
+
+// すべてのボタンにイベントリスナーを設定
+buttons.forEach(button => {
+  document.getElementById(button.id).addEventListener('click', function() {
+    document.getElementById(button.Wrapper).style.display = "block";
+  });
+});
+
+buttons.forEach(button =>{
+addEventListener('click', e => {
+if (e.target.id === button.Wrapper || e.target.id === button.inside || e.target.id === button.close) {
+  document.getElementById(button.Wrapper).style.display = "none";
+}
+})});
+
+
+  </script>
+
+
+
+
+
+
+
+
+<hr>
+
+<section class="s2">
+  <h2>Personal Analysis</h2>
+
+  <div class="s2d1"><h3>星読み</h3>
+    <ul>
+      <span>
+      <li>動物占い:<br>統率力のあるlion</li><br>
+      <li>星座占い:<br>(太陽)Virgo/(月)Leon</li><br>
+      <li>AIが考えた天使の占い:<br>ファ(F)の音"風の天使"</li>
+      </span>
+    </ul>
+  </div>
+
+  <div class="s2d2"><h3>星読みサイトへGO</h3>
+  <span>あなたのパーソナリティは？<br>※生年月日が必要です。</span>
+  </div>
+
+  <div class="s2d3"><h3>心理分析</h3>
+    <span>心理学尺度資料集より <br>～personarity level～</span>
+  </div>
+
+  <div class="s2d4"><h3>あなたも心理分析</h3>
+    <span>簡単で精度の高い心理学検査へGO!</span>
+  </div>
+
+</section>
+
+
+<hr>
+
+
+
+
+
+<section class="s3">
+  <h2>作品群</h2>
+    <div class="s3d1" id="HM">
+       <a href="HouseMakerHP/MarushimaNagisa/index.html"><h3>ハウスメーカーのHP</h3>
+        <ul>
+          <li>製作期間:<br><span>5日間(25時間)</span></li>
+          <li>言語:<br><span>HTML/CSS</span></li>
+          <li>概要:<br><span></span></li>
+        </ul>
+        <a href="https://github.com/NagisaMarushima/Repository_2024_11"><span class="check">Github  check</span></a>
+       </a>
+    </div>
+
+
+<!-- <div id="wrapperHM">
+  <div id="insideHM">
+         <div id="closeHM">x</div>
+      <div id="messageHM">
+        <span>
+          <br>
+          施工の流れパートの<br>
+          縦書き表示にかなり<br>
+          難儀した記憶がある。<br>
+          <br>
+          なかなかカンプファイルに<br>
+          忠実に作れたので<br>
+          満足している。<br>
+          <br>
+          11月初旬
+        </span>
+      <div class="conte">
+
+     </div>
+      
+    </div>
+
+  </div>
+</div> -->
+
+
+<span class="s3dt1">
+  <br>
+  施工の流れパートの<br>
+  縦書き表示にかなり<br>
+  難儀した記憶がある。<br>
+  <br>
+  なかなかカンプファイルに<br>
+  忠実に作れたので<br>
+  満足している。<br>
+  <br>
+  11月初旬
+</span>
+<!-- <span  class="s3dt1"><img class="s3i1" src="img/HMHPT.png" id="imHM"></span> -->
+
+
+<div class="s3d2" id="TN">
+  <a href="TainanHP/index.html"><h3>台南HP</h3>
+      <ul>
+        <li>製作期間:<br><span>4日間(20時間)*1人/7日間*3人</span></li>
+        <li>言語:<br><span>HTML/CSS・JavaScript</span></li>
+      </ul>
+    <a href="https://github.com/NagisaMarushima/HPTaiwan-Tainan"><span class="check">Github  check</span></a>
+  </a>
+</div>
+
+
+
+<span class="s3dt2">
+  <br>
+  概要:<br>グループワーク制作物。<br>4つのページを3人で組んだ。
+  架空の台湾観光サイトの<br>
+  グループワーク制作<br>
+  私は風邪を引いたため<br>
+  作業時間が半分ほどだった<br>
+  <br>
+  モーダルは、隣の人の<br>
+  アイディアを貰って作った。<br>
+  <br>
+  グリッドレイアウトに慣れた。<br>
+  12月中旬
+
+</span>
+<!-- <img class="s3i2" src="img/TNHPT.png" id="imTN"> -->
+
+<div class="s3d3"><h3>PHP演習</h3>
+    <ul>
+      <li>製作期間<span></span></li>
+      <li>言語<span></span></li>
+      <li>概要<span></span></li>
+    </ul>
+   <span class="check">Github  check</a></span>
+   <img>
+</div>
+
+<span class="s3dt3">
+  <br>
+  これから演習があるため。<br>
+  あらかじめ空けておく<br>
+  1月下旬
+</span>
+
+<div class="s3d4">
+  <a href="Creating_HTMLs/index column.html"><h3>CSS練習HP1</h3>
+    <ul>
+      <li>製作期間:<br><span>5日間(20時間)</span></li>
+      <li>言語:<br><span>HTML/CSS</span></li>
+
+    </ul>
+    <a href="https://github.com/NagisaMarushima/practice-of-HTML">  <span class="check">Github  check</span></a>
+    <img>
+  </a>
+</div>
+
+<span class="s3dt4">
+  <br>
+  概要:授業の自習中に作った。<br>最初の制作物。
+  HTMLの授業が一通り終わって<br>
+  自分の実力を知りたかったため<br>
+  自習の時間にCSSを試していた。<br>
+  <br>
+  JS学習前の作品。<br>
+  可読性が低く、このころはまだ<br>
+  不慣れだったと思う。<br>
+  10月初旬
+</span>
+
+
+<div class="s3d5">
+  <a href="JavaScript_rev/put_cards.html"><h3>JavaScript練習1</h3>
+    <ul>
+      <li>製作期間:<br><span>一日(5時間)</span></li>
+      <li>言語:<br><span>JavaScript・HTML/CSS</span></li>
+
+    </ul>
+     <a href="https://github.com/NagisaMarushima/Practice_of_JavaScript-1-"><span class="check">Github  check</span></a>
+    <img>
+  </a>
+</div>
+
+<span class="s3dt5">
+  <br>
+  授業のadditionalな課題。<br>カードを5枚ランダムに表示し、ポーカーの役を判定する。<br>
+  小さなJavaScript習作。<br>
+  個人的に連打で役がドドドドと<br>
+  表示されるのが気に入っている。<br>
+  また、外の頁もおまけである。<br>
+  12月初旬
+</span>
+
+
+
+</section>
+
+
+</main>
+</body>
+</html>
+
+
+
+<!-- 変更案
+dt部をモーダルに切り替え、
+ 空いたスペースには画像を載せる 
+ 疲れたので、途中で終わりにする。
+
+ 追記
+ メディアクエリをiPad版追加
+ その際、s2を横向きに置く
+ -->
